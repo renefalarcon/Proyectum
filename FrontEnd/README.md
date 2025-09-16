@@ -34,5 +34,5 @@ Este proyecto fue desarrollado con **Angular 17** y utiliza **Visual Studio Code
     Usuario: admin
     Contraseña: 1234
 
->>Notas
+**Notas**
     La aplicación se conecta al backend a través de APIs REST.
