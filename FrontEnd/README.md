@@ -1,59 +1,38 @@
-# ProductosApp
+# Proyecto Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.1.
+Este proyecto fue desarrollado con **Angular 17** y utiliza **Visual Studio Code** como IDE. Implementa un sistema de login para administrar productos desde el frontend.
 
-## Development server
+## Requisitos
 
-To start a local development server, run:
+- Node.js 20+  
+- Angular CLI 17+  
+- IDE recomendado: Visual Studio Code  
+- Backend corriendo (Spring Boot u otro servicio API)
 
-```bash
-ng serve
-```
+## Pasos para ejecutar el proyecto
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+1. **Abrir el proyecto en Visual Studio Code**  
+   Abre la carpeta del proyecto con VS Code.
 
-## Code scaffolding
+2. **Instalar los paquetes necesarios**  
+   Abre una terminal en la carpeta del proyecto y ejecuta:
+   ```bash
+   npm install
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+3. **Ejecutar la aplicación Angular**
+    Una vez instaladas las dependencias, ejecuta:
+    ng serve
 
-```bash
-ng generate component component-name
-```
+4. **Acceso a la aplicación**
+    La aplicación se iniciará en:
+    http://localhost:4200/login
+    
+5. **Verificar que el backend esté corriendo**
+    Asegúrate de que el backend esté ejecutándose antes de iniciar la aplicación Angular, para que los endpoints funcionen correctamente.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+6. **Credenciales de login**
+    Usuario: admin
+    Contraseña: 1234
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+>>Notas
+    La aplicación se conecta al backend a través de APIs REST.
