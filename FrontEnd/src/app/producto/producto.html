@@ -1,0 +1,46 @@
+<div class="container">
+  <h2>Gestión de Productos
+    <button style="float: right;" (click)="logout()">Cerrar sesión</button>
+  </h2>
+
+  <!-- Crear producto -->
+  <div>
+    <input [(ngModel)]="nuevoProducto().nombre" placeholder="Nombre" />
+    <input [(ngModel)]="nuevoProducto().precio" type="number" placeholder="Precio" />
+    <button (click)="crear()"
+    [disabled]="!nuevoProducto().nombre || !nuevoProducto().precio || nuevoProducto().precio <= 0">Agregar</button>
+  </div>
+
+  <!-- Tabla de productos -->
+  <table border="1" style="margin-top:20px; width:100%;">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of productos()">
+        <td>{{ p.id }}</td>
+        <td>{{ p.nombre }}</td>
+        <td>$ {{ p.precio | number:'1.0-0' }} CLP</td>
+
+
+        <td>
+          <button (click)="seleccionar(p)">Editar</button>
+          <button (click)="eliminar(p.id!)">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Editar producto -->
+  <div *ngIf="editando() && productoSeleccionado() as seleccionado">
+    <input [(ngModel)]="seleccionado.nombre" placeholder="Nombre" />
+    <input [(ngModel)]="seleccionado.precio" type="number" placeholder="Precio" />
+    <button (click)="actualizar()">Guardar</button>
+    <button (click)="cancelarEdicion()">Cancelar</button>
+  </div>
+</div>

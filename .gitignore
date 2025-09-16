@@ -1,0 +1,56 @@
+# =====================
+# FrontEnd (Angular)
+# =====================
+
+# Node modules
+FrontEnd/node_modules/
+
+# Build output
+FrontEnd/dist/
+FrontEnd/out-tsc/
+
+# Angular cache
+FrontEnd/.angular/
+
+# IDE files
+FrontEnd/.vscode/
+FrontEnd/.idea/
+
+# Environment files (opcional, si no quieres subir claves)
+FrontEnd/src/environments/*.ts
+
+# Log files
+FrontEnd/*.log
+
+# =====================
+# BackEnd (Spring Boot / Java)
+# =====================
+
+# Compiled class files
+Backend/target/
+Backend/bin/
+
+# Logs
+Backend/*.log
+Backend/logs/
+
+# Maven / Gradle files
+Backend/.mvn/
+Backend/mvnw*
+Backend/gradle/
+Backend/build/
+
+# IDE files
+Backend/.idea/
+Backend/.project
+Backend/.classpath
+Backend/.settings/
+
+# Eclipse / NetBeans
+Backend/.metadata/
+Backend/.factorypath
+
+# Others
+Backend/*.iml
+Backend/*.ipr
+Backend/*.iws
