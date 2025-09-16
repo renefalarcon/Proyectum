@@ -33,7 +33,7 @@ Este proyecto fue desarrollado con **IntelliJ IDEA** y utiliza **Spring Boot**, 
 
    Al iniciar la aplicación, se crea automáticamente una base de datos H2.
    Las credenciales se encuentran en application.properties:
-   * spring.datasource.url=jdbc:h2:mem:testdb
+   * spring.datasource.url=jdbc:h2:mem:productosdb
    * spring.datasource.username=usuario
    * spring.datasource.password=contraseña
 
